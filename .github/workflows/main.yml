@@ -1,0 +1,33 @@
+name: Deploy Lumen API to Heroku
+
+on:
+  push:
+    branches:
+      - main  # Deploys every time you push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the code
+      uses: actions/checkout@v2
+
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'  # Adjust the PHP version to match your Lumen app
+        extensions: mbstring, pgsql  # Add any necessary PHP extensions
+
+    - name: Install Composer dependencies
+      run: composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader
+
+    - name: Run database migrations
+      run: php artisan migrate --force
+
+    - name: Deploy to Heroku
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}  # Get the API key from GitHub Secrets
+      run: |
+        git remote add heroku https://git.heroku.com/<your-heroku-app-name>.git
+        git push heroku main
