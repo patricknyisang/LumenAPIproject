@@ -32,7 +32,8 @@ A brief description of your Lumen API project.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/LumenAPIproject.git
+    https://github.com/patricknyisang/LumenAPIproject.git
+
 
 
 If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
