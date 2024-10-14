@@ -18,9 +18,40 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
 ## Security Vulnerabilities
+# Lumen API Project
+
+## Description
+A brief description of your Lumen API project.
+
+## Requirements
+- PHP (version)
+- Composer
+- PostgreSQL (or any database you're using)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/LumenAPIproject.git
+
 
 If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Lumen API Project
+
+## Description
+A brief description of your Lumen API project.
+
+## Requirements
+- PHP (version)
+- Composer
+- PostgreSQL (or any database you're using)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/LumenAPIproject.git
