@@ -55,4 +55,5 @@ A brief description of your Lumen API project.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/LumenAPIproject.git
+    https://github.com/patricknyisang/LumenAPIproject.git
+
